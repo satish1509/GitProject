@@ -195,14 +195,14 @@ public class RegistrationTestCases {
      	driver.manage().window().maximize();
      	driver.get("https://tutorialsninja.com/demo/");
      	
-     	WebElement myAccountDropMenu = driver.findElement(By.xpath("//span[text()='My Account']"));
-        myAccountDropMenu.click();
+     	 WebElement myAccountDropMenu = driver.findElement(By.xpath("//span[text()='My Account']"));
+         myAccountDropMenu.click();
           
-        WebElement registerOption = driver.findElement(By.linkText("Register"));
-        registerOption.click(); 
+         WebElement registerOption = driver.findElement(By.linkText("Register"));
+         registerOption.click(); 
         
-        WebElement continueButton = driver.findElement(By.xpath("//input[@value=\"Continue\"]"));
-        continueButton.click();
+         WebElement continueButton = driver.findElement(By.xpath("//input[@value=\"Continue\"]"));
+         continueButton.click();
         
          String actualFirstNameWarningMessage = driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div")).getText();
          String expectedFirstNameWarningMessage = "First Name must be between 1 and 32 characters!";
@@ -491,7 +491,7 @@ public class RegistrationTestCases {
 	   	 driver.findElement(By.id("input-firstname")).sendKeys("Arun");
 	   	 driver.findElement(By.id("input-lastname")).sendKeys("Mooturi");
 	   	 driver.findElement(By.id("input-email")).sendKeys("Arun@gmail.com");
-	   	driver.findElement(By.id("input-password")).sendKeys("12345");
+	   	 driver.findElement(By.id("input-password")).sendKeys("12345");
 	   	 driver.findElement(By.id("input-confirm")).sendKeys("123456");
 	   	 driver.findElement(By.xpath("//input[@name=\"agree\"]")).click();
 	   	 driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
